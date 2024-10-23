@@ -1,0 +1,62 @@
+Installing SQL...
+IMPORTANT NOTE: to avoid potential migration issues from one SQL to another, please select the one you are currently using. If this is your first installation, both choices are valid. If you don't know the answer, select [1].
+Please select the SQL you would like to use: (Default: MySQL) [1]MySQL [2]MariaDB [E]xit 1
+MySQL selected. Proceeding with installation.
+Installing mysql-server:  OK
+Would you like to change your sql password or add one ? (Default: Yes) [Y]es [N]o [E]xit y
+Enter your new sql password: 
+Please confirm your new sql password: 
+ Password entered do not match. Please try again.
+Enter your new sql password: 
+Please confirm your new sql password: 
+Changing sql password:  OK
+Adding sql password to .env:  OK
+Creating new sql repository:  OK
+Setting max log size:  OK
+Adding disable_log_bin, wait_timeout, interactive_timeout to sql config:  OK
+Restarting mysql:  OK
+
+Configuring OriginTrail node...
+🌐 Setting up node for Base Sepolia (Testnet) environment
+🔗 Connecting to Base-Sepolia (Testnet)
+Configuring node config file:  OK
+Adding initial config to node config file:  OK
+Adding triple store config to node config file:  OK
+Finalizing initial node config file:  OK
+🔧 Configuring Base Sepolia (Testnet)...
+You'll now be asked to input your operational wallets public and private keys (press ENTER to skip)
+Please insert your operational wallet public key no. 1: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ EVM operational wallet public key no. 1: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Please insert private key for your operational wallet no. 1: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ EVM operational wallet private key no. 1: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Enter your EVM management wallet address : xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+✅ EVM management wallet address : xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Enter your profile shares token name : xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+✅ Profile shares token name : xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Enter your profile shares token symbol : xxxxxxxxxxxxxxxxxxxx
+✅ Profile shares token symbol : xxxxxxxxxx
+Enter your operator fee for Base Sepolia (0-100): xxxxxxxxx
+✅ Operator fee for base: xxxxxxxxxxxxx
+Enter your RPC endpoint: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+✅ RPC endpoint: xxxxxxxxxxxxxxxxxxxxxxxxxx
+📦 Installing npm packages...
+Executing npm install:  OK
+🔧 Setting up system service...
+Copying otnode service file:  OK
+🚀 Starting OriginTrail node...
+Enabling otnode:  OK
+Starting otnode:  OK
+Checking otnode status:  OK
+✅ OriginTrail testnet node installation complete!
+INSTALLATION COMPLETE !
+
+[2024-10-22 18:08:33] INFO:  Enabling network protocol: /store/1.0.0
+[2024-10-22 18:08:33] INFO:  Enabling network protocol: /update/1.0.0
+[2024-10-22 18:08:33] INFO:  Enabling network protocol: /get/1.0.0
+[2024-10-22 18:08:33] INFO:  Node listening on port: 8900
+[2024-10-22 18:08:33] INFO:  Routers initialized successfully
+[2024-10-22 18:08:33] INFO:  Network ID is QmSsiAp9qfEuBytqgaj1qLdBWNZqRGXA2kj7rLNttBSLXg, connection port is 9000
+[2024-10-22 18:08:33] INFO:  Node is up and running!
+[2024-10-22 18:08:33] INFO:  Starting removeDuplicateServiceAgreementMigration migration.
+[2024-10-22 18:08:33] DEBUG:  Saving file with name: removeDuplicateServiceAgreementMigration in the directory: /root/ot-node/data/migrations
+[2024-10-22 18:08:33] INFO:  removeDuplicateServiceAgreementMigration migration completed. Lasted: 46 millisecond(s).
