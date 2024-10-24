@@ -78,9 +78,9 @@ cd /root/ && curl -k -o v8_installer.sh https://raw.githubusercontent.com/Origin
 
 **4. Verify V8 DKG Core node installation**
 
-- During node installation process stay cool and read on ssh menu, maybe your menu like image below. this OK status
+- During node installation process stay cool and read on ssh logs, maybe your menu like image below. this OK status
 
-![V8_Incentivised_DKG_Core_Node_deployment_process (1)](https://github.com/user-attachments/assets/68b8eeb6-28eb-413f-a220-a064194aa276)
+![V8-DKG-Core-Node-installation-OriginTrail-10-24-2024_09_53_AM](https://github.com/user-attachments/assets/a96a3e52-9d8d-45ad-90ae-7163893c3ea2)
 
 - If your installation has been successful, your node will show the `Node is up and running!` log as shown in the example image. **Congratulations, your V8 DKG Core node is up and running!**
 
@@ -99,7 +99,7 @@ cd /root/ && curl -k -o v8_installer.sh https://raw.githubusercontent.com/Origin
 **2. To check leaderboard the Incentivised testnet website**
 
 - The leaderboards are periodically updated based on community contributions, used to determine the amount of TRAC incentives.
-- Check [Community Leaderboards](https://dkg-v8-incentivised-testnet.origintrail.io/)
+- Check **[COMMUNITY LEADERBOARDS](https://dkg-v8-incentivised-testnet.origintrail.io/)**
 
 **3. Important Note** 
 
