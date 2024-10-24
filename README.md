@@ -60,7 +60,7 @@ OriginTrail - Decentralized Knowledge Graph (DKG), Run an Node V8 Incentivized T
 ```
 
 ## 2. Running V8 DKG Core Node installation
-**1. Installer bind firewall configured**
+**1. Installer bind (port) firewall configured**
 ```sh
 sudo ufw allow 9999 && sudo ufw allow 8900 && sudo ufw allow 9000 && sudo ufw reload
 sudo iptables -A INPUT -p tcp --dport 9999 -j ACCEPT && sudo iptables -A INPUT -p tcp --dport 8900 -j ACCEPT && sudo iptables -A INPUT -p tcp --dport 9000 -j ACCEPT
@@ -68,10 +68,10 @@ sudo iptables -A INPUT -p tcp --dport 9999 -j ACCEPT && sudo iptables -A INPUT -
 
 **2. Run OriginTrail V8 DKG Core node installer** 
 ```sh
-cd /root/ && curl -sSL https://raw.githubusercontent.com/arcxteam/origintrail-v8-node/main/Ubuntu-v20-v22-v24-LTS/v8_installer.sh | bash
+cd /root/ && curl -k -o v8_installer.sh https://raw.githubusercontent.com/OriginTrail/ot-node/v8/develop/installer/v8_installer.sh && chmod +x v8_installer.sh
 ```
 
-**3. Execute the installer by running (OPTIONAL if not show logs)**
+**3. Execute the installer by running**
 ```sh
 ./v8_installer.sh
 ```
@@ -86,8 +86,8 @@ cd /root/ && curl -sSL https://raw.githubusercontent.com/arcxteam/origintrail-v8
 
 ![Captureorigin](https://github.com/user-attachments/assets/0b7070f4-6809-43a4-97c2-ca11b19ebf90)
 
-## 3. Checking, Leaderboard and useful commands
-**1. super cmd logs your need**
+## 3. Checking, Leaderboard and Usefull Commands
+**1. Super cmd logs its need**
 
 - Starting your node: `otnode-start` or `systemctl start otnode`
 - Stopping the node: `otnode-stop` or `systemctl stop otnode`
@@ -99,7 +99,7 @@ cd /root/ && curl -sSL https://raw.githubusercontent.com/arcxteam/origintrail-v8
 **2. To check leaderboard the Incentivised testnet website**
 
 - The leaderboards are periodically updated based on community contributions, used to determine the amount of TRAC incentives.
-- Check **[COMMUNITY LEADERBOARDS](https://dkg-v8-incentivised-testnet.origintrail.io/)**
+- Checking show up **[COMMUNITY LEADERBOARDS](https://dkg-v8-incentivised-testnet.origintrail.io/)**
 
 **3. Important Note** 
 
