@@ -68,10 +68,10 @@ sudo iptables -A INPUT -p tcp --dport 9999 -j ACCEPT && sudo iptables -A INPUT -
 
 **2. Run OriginTrail V8 DKG Core node installer** 
 ```sh
-cd /root/ && curl -k -o v8_installer.sh https://raw.githubusercontent.com/OriginTrail/ot-node/v8/develop/installer/v8_installer.sh && chmod +x v8_installer.sh
+cd /root/ && curl -sSL https://raw.githubusercontent.com/arcxteam/origintrail-v8-node/main/Ubuntu-v20-v22-v24-LTS/v8_installer.sh | bash
 ```
 
-**3. Execute the installer by running**
+**3. Execute the installer by running (OPTIONAL if not show logs)**
 ```sh
 ./v8_installer.sh
 ```
