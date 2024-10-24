@@ -112,17 +112,17 @@ install_prereqs() {
     perform_step apt install build-essential -y "Installing build-essential" > /dev/null 2>&1
 
     # Install nodejs 20 (via NVM).
-    wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash > /dev/null 2>&1
+    wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash > /dev/null 2>&1
     export NVM_DIR="$HOME/.nvm"
     # This loads nvm
     [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
     # This loads nvm bash_completion
     [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-    nvm install v20.11.1 > /dev/null 2>&1
-    nvm use v20.11.1 > /dev/null 2>&1
+    nvm install v20.18.0 > /dev/null 2>&1
+    nvm use v20.18.0 > /dev/null 2>&1
 
-    # Set nodejs 20.11.1 as default and link node to /usr/bin/
-    nvm alias default 20.11.1 > /dev/null 2>&1
+    # Set nodejs 20.18.0 as default and link node to /usr/bin/
+    nvm alias default 20.18.0 > /dev/null 2>&1
     sudo ln -s $(which node) /usr/bin/ > /dev/null 2>&1
     sudo ln -s $(which npm) /usr/bin/ > /dev/null 2>&1
 
