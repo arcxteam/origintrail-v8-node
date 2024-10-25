@@ -62,8 +62,8 @@ OriginTrail - Decentralized Knowledge Graph (DKG), Run an Node V8 Incentivized T
 ## 2. Running V8 DKG Core Node installation
 **1. Installer bind (port) firewall configured**
 ```sh
-sudo ufw allow 9999 && sudo ufw allow 8900 && sudo ufw allow 9000 && sudo ufw reload
-sudo iptables -A INPUT -p tcp --dport 9999 -j ACCEPT && sudo iptables -A INPUT -p tcp --dport 8900 -j ACCEPT && sudo iptables -A INPUT -p tcp --dport 9000 -j ACCEPT
+sudo ufw allow 9999 && sudo ufw allow 8900 && sudo ufw allow 9000 && sudo ufw allow 3030 && sudo ufw reload
+sudo iptables -A INPUT -p tcp --dport 9999 -j ACCEPT && sudo iptables -A INPUT -p tcp --dport 8900 -j ACCEPT && sudo iptables -A INPUT -p tcp --dport 9000 -j ACCEPT && sudo iptables -A INPUT -p tcp --dport 3030 -j ACCEPT
 ```
 
 **2. Run OriginTrail V8 DKG Core node installer** 
