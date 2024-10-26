@@ -50,13 +50,145 @@ Checking otnode status:  OK
 ✅ OriginTrail testnet node installation complete!
 INSTALLATION COMPLETE !
 
-[2024-10-22 18:08:33] INFO:  Enabling network protocol: /store/1.0.0
-[2024-10-22 18:08:33] INFO:  Enabling network protocol: /update/1.0.0
-[2024-10-22 18:08:33] INFO:  Enabling network protocol: /get/1.0.0
-[2024-10-22 18:08:33] INFO:  Node listening on port: 8900
-[2024-10-22 18:08:33] INFO:  Routers initialized successfully
-[2024-10-22 18:08:33] INFO:  Network ID is QmSsiAp9qfEuBytqgaj1qLdBWNZqRGXA2kj7rLNttBSLXg, connection port is 9000
-[2024-10-22 18:08:33] INFO:  Node is up and running!
-[2024-10-22 18:08:33] INFO:  Starting removeDuplicateServiceAgreementMigration migration.
-[2024-10-22 18:08:33] DEBUG:  Saving file with name: removeDuplicateServiceAgreementMigration in the directory: /root/ot-node/data/migrations
-[2024-10-22 18:08:33] INFO:  removeDuplicateServiceAgreementMigration migration completed. Lasted: 46 millisecond(s).
+Started OriginTrail V6 Node.
+[2024-10-26 08:28:51] USERLVL:  level-change
+[2024-10-26 08:28:51] WARN:  ======================================================
+[2024-10-26 08:28:51] WARN:  Using node.js version: 20.18.0
+[2024-10-26 08:28:51] WARN:  ======================================================
+[2024-10-26 08:28:51] INFO:  Checking for new updates...
+[2024-10-26 08:28:51] DEBUG:  AutoUpdater - Comparing versions...
+[2024-10-26 08:28:51] DEBUG:  AutoUpdater - Reading app version from /root/ot-node/8.1.0+beta.12/package.json
+[2024-10-26 08:28:51] DEBUG:  AutoUpdater - Reading remote version from https://raw.githubusercontent.com/OriginTrail/ot-node/v8/release/testnet/package.json
+[2024-10-26 08:28:51] DEBUG:  AutoUpdater - Sending request to https://raw.githubusercontent.com/OriginTrail/ot-node/v8/release/testnet/package.json
+[2024-10-26 08:28:51] DEBUG:  AutoUpdater - Current version: 8.1.0+beta.12
+[2024-10-26 08:28:51] DEBUG:  AutoUpdater - Remote Version: 8.1.0+beta.12
+[2024-10-26 08:28:51] INFO:  Your node is running on the latest version!
+[2024-10-26 08:28:51] TRACE:  Removing file at path: /root/ot-node/data/UPDATED
+[2024-10-26 08:28:51] DEBUG:  File not found at path: /root/ot-node/data/UPDATED
+[2024-10-26 08:28:51] INFO:  Starting multipleOpWalletsUserConfigurationMigration migration.
+[2024-10-26 08:28:51] DEBUG:  Reading file: /root/ot-node/.origintrail_noderc, converting to json: true
+[2024-10-26 08:28:51] TRACE:  multipleOpWalletsUserConfigurationMigration: Skipping user configuration update for blockchain: base:84532. Configuration in new format.
+[2024-10-26 08:28:51] DEBUG:  Saving file with name: .origintrail_noderc in the directory: /root/ot-node
+[2024-10-26 08:28:51] DEBUG:  Saving file with name: multipleOpWalletsUserConfigurationMigration in the directory: /root/ot-node/data/migrations
+[2024-10-26 08:28:51] INFO:  multipleOpWalletsUserConfigurationMigration migration completed. Lasted: 5 millisecond(s).
+[2024-10-26 08:28:51] INFO:  ██████╗ ██╗  ██╗ ██████╗     ██╗   ██╗ █████╗ 
+[2024-10-26 08:28:51] INFO:  ██╔══██╗██║ ██╔╝██╔════╝     ██║   ██║██╔══██╗
+[2024-10-26 08:28:51] INFO:  ██║  ██║█████╔╝ ██║  ███╗    ██║   ██║╚█████╔╝
+[2024-10-26 08:28:51] INFO:  ██║  ██║██╔═██╗ ██║   ██║    ╚██╗ ██╔╝██╔══██╗
+[2024-10-26 08:28:51] INFO:  ██████╔╝██║  ██╗╚██████╔╝     ╚████╔╝ ╚█████╔╝
+[2024-10-26 08:28:51] INFO:  ╚═════╝ ╚═╝  ╚═╝ ╚═════╝       ╚═══╝   ╚════╝ 
+[2024-10-26 08:28:51] INFO:  ======================================================
+[2024-10-26 08:28:51] INFO:               OriginTrail Node v8.1.0+beta.12
+[2024-10-26 08:28:51] INFO:  ======================================================
+[2024-10-26 08:28:51] INFO:  Node is running in testnet environment
+[2024-10-26 08:28:51] INFO:  Dependency injection module is initialized
+[2024-10-26 08:28:51] INFO:  Event emitter initialized
+[2024-10-26 08:28:51] INFO:  autoUpdater module initialized with implementation: ot-auto-updater
+[2024-10-26 08:28:52] INFO:  validation module initialized with implementation: merkle-validation
+[2024-10-26 08:28:52] INFO:  telemetry module initialized with implementation: ot-telemetry
+[2024-10-26 08:28:52] INFO:  network module initialized with implementation: libp2p-service
+[2024-10-26 08:28:53] INFO:  httpClient module initialized with implementation: express-http-client
+[2024-10-26 08:28:54] DEBUG:  Connected to the blockchain RPC: https://base-sepolia.drpc.org.
+[2024-10-26 08:28:54] INFO:  Initializing contracts with hub contract address: xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+[2024-10-26 08:28:54] INFO:  tripleStore module initialized with implementation: ot-blazegraph
+[2024-10-26 08:28:54] TRACE:  Skipping initialisation of contract: WhitelistStorage, address: 0x47b2CE4D8EAb365701409E31C76A8171ca4692bD
+[2024-10-26 08:28:54] TRACE:  Skipping initialisation of contract: SHA256, address: 0xB2E84F81d9D24E80bD3a4CfFa897081862100284
+[2024-10-26 08:28:54] TRACE:  Skipping initialisation of contract: ServiceAgreementStorageV1, address: 0xD0CB12ab0e9553a4329a5a3e9e7d391e0Bdeb8c6
+[2024-10-26 08:28:54] TRACE:  Skipping initialisation of contract: ServiceAgreementStorageV1U1, address: 0xe1C87051FB3A30244A65cC90fC969b08084479E0
+[2024-10-26 08:28:54] TRACE:  Skipping initialisation of contract: ParanetServicesRegistry, address: 0xFb69598F2FA10Bd52C7EE8E0B4B37aC5e83630f8
+[2024-10-26 08:28:54] TRACE:  Skipping initialisation of contract: ParanetKnowledgeMinersRegistry, address: 0x3Ce3d3d960E14eF1b6768287002950bEc9240f1c
+[2024-10-26 08:28:54] TRACE:  Skipping initialisation of contract: Assertion, address: 0xe37b657eB89e8AeBd3762df5dA1c19555Da9dA00
+[2024-10-26 08:28:54] TRACE:  Skipping initialisation of contract: Identity, address: 0xff707E2AC44990C35deccb3d6747E75B6bdcA13C
+[2024-10-26 08:28:54] TRACE:  Skipping initialisation of contract: NodeOperatorFeesStorage, address: 0x49E529c56F952C277815934a55B09B97FCc551a4
+[2024-10-26 08:28:54] TRACE:  Skipping initialisation of contract: Paranet, address: 0x56384E913Ea106404f9ea77e8d635d74068C56c2
+[2024-10-26 08:28:54] INFO:  repository module initialized with implementation: sequelize-repository
+[2024-10-26 08:28:54] INFO:  Contracts initialized
+[2024-10-26 08:28:55] INFO:  Balance of 0xxxxxxxxxxxxxxxxxzzzzzzzzxxxxxxxxxxx is 0.567 ETH and 120000 TRAC.
+[2024-10-26 08:28:55] INFO:  blockchain module initialized with implementation: base:84532
+[2024-10-26 08:28:55] INFO:  All modules initialized!
+[2024-10-26 08:28:55] INFO:  Starting removeServiceAgreementsForChiadoMigrationV6.2.0.Hotfix11 migration.
+[2024-10-26 08:28:55] DEBUG:  Saving file with name: removeServiceAgreementsForChiadoMigrationV6.2.0.Hotfix11 in the directory: /root/ot-node/data/migrations
+[2024-10-26 08:28:55] INFO:  removeServiceAgreementsForChiadoMigrationV6.2.0.Hotfix11 migration completed. Lasted: 9 millisecond(s).
+[2024-10-26 08:28:55] INFO:  Starting devnetPruningMigration migration.
+[2024-10-26 08:28:55] INFO:  Pruning devenet operational tables
+[2024-10-26 08:28:55] DEBUG:  Saving file with name: devnetPruningMigration in the directory: /root/ot-node/data/migrations
+[2024-10-26 08:28:55] INFO:  devnetPruningMigration migration completed. Lasted: 43 millisecond(s).
+[2024-10-26 08:28:55] TRACE:  Identity id: 0 found for wallet: xxxxxxxxxxxxxxxxxxzxxxxx on blockchain: base:84532
+[2024-10-26 08:28:55] INFO:  Creating profile on network: base:84532
+[2024-10-26 08:28:55] DEBUG:  getIdentityId(operational=xxxxxxxxxxxxxxxxxxxxxxxxx) call has been successfully executed; Result: 0; RPC: https://base-sepolia.drpc.org.
+[2024-10-26 08:28:56] DEBUG:  Sending signed transaction createProfile to the blockchain base:84532 with gas limit: 3205889 and gasPrice 1000604. Transaction queue length: 0. Wallet used: xxxxxxxxxxxxxxxxxx
+[2024-10-26 08:28:56] DEBUG:  createProfile(adminWallet=xxxxxxxxxxxxxxxxxxxxxxxxx, operationalWallets=[], nodeId=xxxxxxxxxxxxxxxxx, sharesTokenName=xxxxxxxxx, sharesTokenSymbol=xxxxxxxxxx, initialOperatorFee=5) estimateGas has been successfully executed; RPC: https://base-sepolia.drpc.org.
+[2024-10-26 08:28:58] INFO:  Profile created with name: xxxxxxxx and symbol: xxxxxxxx, wallet: xxxxxxxxxxxxxxxxxxx, on blockchain base:84532
+> origintrail_node@8.1.0+beta.12 set-ask
+> node scripts/set-ask.js --rpcEndpoint=https://base-sepolia.drpc.org --ask=0.1 --privateKey=xxxxxxxxxxxxxxxx --hubContractAddress=xxxxxxxxxxxxxxxxxxxx
+Set ask completed
+[2024-10-26 08:29:06] TRACE:  Identity id: 356 found for wallet: xxxxxxxxxxxxxxx on blockchain: base:84532
+[2024-10-26 08:29:06] DEBUG:  getIdentityId(operational=xxxxxxxxxxxxxxxxxxxx) call has been successfully executed; Result: 356; RPC: https://base-sepolia.drpc.org.
+[2024-10-26 08:29:06] INFO:  Identity ID: 356
+[2024-10-26 08:29:06] DEBUG:  getNodeId(identityId=356) call has been successfully executed; Result: xxxxxxxxxxxxxxxxxxx; RPC: https://base-sepolia.drpc.org.
+[2024-10-26 08:29:06] USERLVL: [sendTelemetryCommand]  level-change
+[2024-10-26 08:29:06] USERLVL: [dialPeersCommand]  level-change
+[2024-10-26 08:29:06] USERLVL: [otnodeUpdateCommand]  level-change
+[2024-10-26 08:29:06] USERLVL: [operationIdCleanerCommand]  level-change
+[2024-10-26 08:29:06] USERLVL: [commandsCleanerCommand]  level-change
+[2024-10-26 08:29:06] USERLVL: [startParanetSyncCommands]  level-change
+[2024-10-26 08:29:06] USERLVL: [blockchainEventCleanerCommand]  level-change
+[2024-10-26 08:29:06] USERLVL: [getCleanerCommand]  level-change
+[2024-10-26 08:29:06] USERLVL: [publishCleanerCommand]  level-change
+[2024-10-26 08:29:06] USERLVL: [getResponseCleanerCommand]  level-change
+[2024-10-26 08:29:06] USERLVL: [publishResponseCleanerCommand]  level-change
+[2024-10-26 08:29:06] USERLVL: [updateCleanerCommand]  level-change
+[2024-10-26 08:29:06] USERLVL: [shardingTableCheckCommand]  level-change
+[2024-10-26 08:29:06] USERLVL: [updateResponseCleanerCommand]  level-change
+[2024-10-26 08:29:06] INFO:  Replay pending/started commands from the database...
+[2024-10-26 08:29:06] INFO:  Finished replaying old commands
+[2024-10-26 08:29:06] DEBUG: [dialPeersCommand]  Removing nodes from local sharding table for blockchain base:84532.
+[2024-10-26 08:29:06] DEBUG:  nodesCount() call has been successfully executed; Result: 356; RPC: https://base-sepolia.drpc.org.
+[2024-10-26 08:29:07] DEBUG: [dialPeersCommand]  Started pulling 356 nodes from blockchain sharding table.
+[2024-10-26 08:29:07] DEBUG:  head() call has been successfully executed; Result: 234; RPC: https://base-sepolia.drpc.org.
+[2024-10-26 08:29:23] DEBUG:  Saving file with name: pullShardingTableMigrationV620Hotfix11 in the directory: /root/ot-node/data/migrations
+[2024-10-26 08:29:23] INFO:  pullShardingTableMigrationV620Hotfix11 migration completed. Lasted: 7676 millisecond(s).
+[2024-10-26 08:29:23] INFO:  Starting serviceAgreementPruningMigration migration.
+[2024-10-26 08:29:23] DEBUG:  Saving file with name: serviceAgreementPruningMigration in the directory: /root/ot-node/data/migrations
+[2024-10-26 08:29:23] INFO:  serviceAgreementPruningMigration migration completed. Lasted: 7 millisecond(s).
+[2024-10-26 08:29:23] INFO:  Starting devnetNeuroPruningMigration migration.
+[2024-10-26 08:29:23] DEBUG:  Saving file with name: devnetNeuroPruningMigration in the directory: /root/ot-node/data/migrations
+[2024-10-26 08:29:23] INFO:  devnetNeuroPruningMigration migration completed. Lasted: 0 millisecond(s).
+[2024-10-26 08:29:23] INFO:  Initializing http api and rpc router
+[2024-10-26 08:29:23] INFO:  Enabling network protocol: /store/1.0.0
+[2024-10-26 08:29:23] INFO:  Enabling network protocol: /update/1.0.0
+[2024-10-26 08:29:23] INFO:  Enabling network protocol: /get/1.0.0
+[2024-10-26 08:29:23] INFO:  Node listening on port: 8900
+[2024-10-26 08:29:23] INFO:  Routers initialized successfully
+
+
+[2024-10-26 08:29:23] INFO:  Network ID is QmRAzLsy99eaptDagWhY8vV7hULPMKtdXr9WgWxjdfhdkd, connection port is 9000
+**[2024-10-26 08:29:23] INFO:  Node is up and running!**
+
+
+[2024-10-26 08:29:23] INFO:  Starting removeDuplicateServiceAgreementMigration migration.
+[2024-10-26 08:29:23] DEBUG:  Saving file with name: removeDuplicateServiceAgreementMigration in the directory: /root/ot-node/data/migrations
+[2024-10-26 08:29:23] INFO:  removeDuplicateServiceAgreementMigration migration completed. Lasted: 17 millisecond(s).
+[2024-10-26 08:29:23] TRACE: [dialPeersCommand]  Node connected to QmNcjL4P5Dzq5hn6fkncYEsTcRU2g7g4N5rE2KCvHSPDav, updating sharding table last seen and last dialed.
+[2024-10-26 08:29:24] TRACE: [dialPeersCommand]  Node connected to QmSLm6JaBRG1U2f8x6UmFFoa9HEgQkbNBko16g4t78L7NQ, updating sharding table last seen and last dialed.
+[2024-10-26 08:29:24] TRACE: [dialPeersCommand]  Node connected to QmfQ8BWwJjtDbHc8nSwznbgjFsMq4TPWuTLZZSwsqXUR6D, updating sharding table last seen and last dialed.
+[2024-10-26 08:29:25] TRACE: [dialPeersCommand]  Node connected to QmPwTejWuSLHnz9DzF4WrojfaDdvgG5qhcfTPTFF7CUjRG, updating sharding table last seen and last dialed.
+[2024-10-26 08:29:25] TRACE: [dialPeersCommand]  Node connected to QmVd3G8aXbpfqaphYYFsoKEyFD2udoeUPxzQ4LtZ5mW9Z4, updating sharding table last seen and last dialed.
+[2024-10-26 08:29:25] TRACE: [dialPeersCommand]  Node connected to QmVkyTd8hgEUrGtAwKVbJkxSSbCdAQQAm7QqtH455hBM5P, updating sharding table last seen and last dialed.
+[2024-10-26 08:29:25] TRACE: [dialPeersCommand]  Node connected to QmeF87ZxCHkYWroiq7Uoag3a8aJExaYcv62L4DoLRuv1wT, updating sharding table last seen and last dialed.
+[2024-10-26 08:29:26] TRACE: [dialPeersCommand]  Node connected to QmPsZmGoQzd6s5aA4iuwQT2ZyVpsC6rNVe6wf8nRMsTqfe, updating sharding table last seen and last dialed.
+[2024-10-26 08:29:26] TRACE: [dialPeersCommand]  Node connected to QmS1dr5Fpc9eeWcQKeE1EJF4Z35GRJLFo49T7BU5R497pV, updating sharding table last seen and last dialed.
+[2024-10-26 08:29:26] TRACE: [dialPeersCommand]  Node connected to QmZNKqXNCrcw2qA4H9CJQHZv7VwnQiv3sZ8bPYCVKq8esy, updating sharding table last seen and last dialed.
+[2024-10-26 08:29:26] TRACE: [dialPeersCommand]  Node connected to QmPb2WRPT86Hg2q4vdPvW2oMm7abQYsuy8RXSWm72SXVsy, updating sharding table last seen and last dialed.
+[2024-10-26 08:29:26] TRACE: [dialPeersCommand]  Node connected to QmZJTNx4oWYNHmCnAWRh1pEaqXUJPc8Z4iJG2s2WdcGhgH, updating sharding table last seen and last dialed.
+[2024-10-26 08:29:26] TRACE: [dialPeersCommand]  Node connected to QmV2PuLG16BFKx59HjYjEMwaUUjjcKMyx97W9RL7xZPkHm, updating sharding table last seen and last dialed.
+[2024-10-26 08:29:26] TRACE: [dialPeersCommand]  Node connected to QmT2MopAQN6yyvMEdjvNNRZV1uEqYnjkwLjJYFoTuhgUUd, updating sharding table last seen and last dialed.
+[2024-10-26 08:29:26] TRACE: [dialPeersCommand]  Node connected to QmeHtWmSLkkfT2y4ibXFeDk1XT45AtR15qo2TmD6xpxRPx, updating sharding table last seen and last dialed.
+[2024-10-26 08:29:26] TRACE: [dialPeersCommand]  Node connected to QmbMof1V2xHTLhSz62YjeG6kewuE8e85ET3pPh3uFR2fhd, updating sharding table last seen and last dialed.
+[2024-10-26 08:29:26] TRACE: [dialPeersCommand]  Node connected to QmQhWMwHEUV8fpor6asUHzDekwE1ibhL1GeEpkRHuzeQWH, updating sharding table last seen and last dialed.
+[2024-10-26 08:29:26] TRACE: [dialPeersCommand]  Node connected to QmTxV7zfh8duoJ2CZvJWju4zghPvHKL6Q9Q9iTfvEvNDte, updating sharding table last seen and last dialed.
+[2024-10-26 08:29:26] TRACE: [dialPeersCommand]  Node connected to QmPe74nxGtFw4P4MnTs5jBne8iDZuzsFHC8hoCjjvE2fyi, updating sharding table last seen and last dialed.
+[2024-10-26 08:29:26] TRACE: [dialPeersCommand]  Node connected to QmRWFs9Z3MxPuKDVLpFMF1Hd1aBuzHpgQLws4hXRTPWTaU, updating sharding table last seen and last dialed.
+
+
+example logging show!!!
