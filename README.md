@@ -24,11 +24,11 @@ OriginTrail - Decentralized Knowledge Graph (DKG), Run an Node V8 Incentivized T
 `In order to deploy your V8 DKG node, you will need a Linux server with the minimum recommended hardware`
 | Requirement                      | Details                                          |
 |-----------------------------------|--------------------------------------------------|
-| RAM                               | 4GB                                              |
-| CPUs                              | 2 CPUs                                           |
-| HDD Space                         | 50GB                                             |
+| RAM/Memory                         | 4 GB                                               |
+| CPU/vCPU                              | 2 Cores                                           |
+| Storage Space                         | 50 GB                                             |
 | Supported OS                      | Ubuntu 20.04 LTS, Ubuntu 22.04 LTS               |
-| Node Installation Script Purpose  | Install OriginTrail node                         |
+| Node Installation Script   | Monitor, Language Based-on Java                         |
 
 **2. Configuration OriginTrail node**
 
@@ -53,6 +53,8 @@ OriginTrail - Decentralized Knowledge Graph (DKG), Run an Node V8 Incentivized T
 
 - PORT 8900 (default node API endpoint)
 - PORT 9000 (networking port for communication with other nodes)
+- PORT 9999 (a framework queries/graph data with Blazegraph)
+- PORT 3030 (a framework queries/graph data with Fuseki)
 
 **In order to acquire TRAC token on Base Sepolia, you should use the Faucet bot on [Discord](https://discord.gg/zuCaVtXFpD) channels** 
 ```sh
@@ -99,7 +101,7 @@ cd /root/ && curl -k -o v8_installer.sh https://raw.githubusercontent.com/Origin
 **2. To check leaderboard the Incentivised testnet website**
 
 - The leaderboards are periodically updated based on community contributions, used to determine the amount of TRAC incentives.
-- Checking show up **[COMMUNITY LEADERBOARDS](https://dkg-v8-incentivised-testnet.origintrail.io/)**
+- Checking show up **[DASHBOARD OF LEADERBOARDS](https://dkg-v8-incentivised-testnet.origintrail.io/)**
 
 **3. Important Note** 
 
