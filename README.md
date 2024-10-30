@@ -91,17 +91,17 @@ cd /root/ && curl -k -o v8_installer.sh https://raw.githubusercontent.com/Origin
 ## 3. Checking, Leaderboard and Usefull Commands
 **1. Super cmd logs its need**
 
-- Starting your node: `otnode-start` or `systemctl start otnode`
-- Stopping the node: `otnode-stop` or `systemctl stop otnode`
-- Restarting the node: `otnode-restart`  or `systemctl restart otnode`
-- Showing node logs: `otnode-logs`  or `journalctl -u otnode --output cat -fn 100`
-- Opening the node config: `otnode-config` or `nano /root/ot-node/.origintrail_noderc`
+- Starting your node: `systemctl start otnode`
+- Stopping the node: `systemctl stop otnode`
+- Restarting the node: `systemctl restart otnode`
+- Showing node logs: `journalctl -u otnode --output cat -fn 100`
+- Opening the node config: `nano /root/ot-node/.origintrail_noderc`
 - Save and backup: `cat /root/ot-node/.origintrail_noderc`
 
 **2. To check leaderboard the Incentivised testnet website**
 
 - The leaderboards are periodically updated based on community contributions, used to determine the amount of TRAC incentives.
-- Checking show up **[DASHBOARD OF LEADERBOARDS](https://dkg-v8-incentivised-testnet.origintrail.io/)**
+- Checking show up **[DASHBOARD LEADERBOARDS](https://dkg-v8-incentivised-testnet.origintrail.io/)**
 
 **3. Important Note** 
 
