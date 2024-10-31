@@ -1,8 +1,8 @@
 ![V8_DKG_Testnet](https://github.com/user-attachments/assets/e6bd420a-d2d7-4772-94ab-a029e76ab2d6)
 
-# OriginTrail V8 Incentivized Testnet - Guides
+# Run OriginTrail V8 Incentivized Testnet Node - Full Guide
 OriginTrail - Decentralized Knowledge Graph (DKG), Run an Node V8 Incentivized Testnet - Buidl to Measure, Manage, and Master
-## Here We Go...Guys!!!
+## Here We Go...Gasss!!
 **`OriginTrail community, driven by an incentivized testnet system. The goal of the V8 incentivized testnet is to ensure security, scalability and usability for all ecosystem participants in a joint test environment, before releasing the new version to the DKG mainnet. An incentivising all eligible contributors with a total incentive pool of 1,000,000 TRAC tokens.`**
 
 *There following four categories of contributions and their incentive pools are indicated below.*
@@ -27,7 +27,7 @@ OriginTrail - Decentralized Knowledge Graph (DKG), Run an Node V8 Incentivized T
 | RAM/Memory                         | 4 GB                                               |
 | CPU/vCPU                              | 2 Cores                                           |
 | Storage Space                         | 50 GB                                             |
-| Supported OS                      | Ubuntu 20.04 LTS, Ubuntu 22.04 LTS               |
+| Supported OS                      | Ubuntu 20.04-22.04-24.04 LTS               |
 | Node Installation Script   | Monitor, Language Based-on Java                         |
 
 **2. Configuration OriginTrail node**
@@ -68,7 +68,7 @@ sudo ufw allow 9999 && sudo ufw allow 8900 && sudo ufw allow 9000 && sudo ufw al
 sudo iptables -A INPUT -p tcp --dport 9999 -j ACCEPT && sudo iptables -A INPUT -p tcp --dport 8900 -j ACCEPT && sudo iptables -A INPUT -p tcp --dport 9000 -j ACCEPT && sudo iptables -A INPUT -p tcp --dport 3030 -j ACCEPT
 ```
 
-**2. Run OriginTrail V8 DKG Core node installer** 
+**2. Run OriginTrail V8 DKG core node installer** 
 ```sh
 cd /root/ && curl -k -o v8_installer.sh https://raw.githubusercontent.com/OriginTrail/ot-node/v8/develop/installer/v8_installer.sh && chmod +x v8_installer.sh
 ```
@@ -89,21 +89,21 @@ cd /root/ && curl -k -o v8_installer.sh https://raw.githubusercontent.com/Origin
 ![Captureorigin](https://github.com/user-attachments/assets/0b7070f4-6809-43a4-97c2-ca11b19ebf90)
 
 ## 3. Checking, Leaderboard and Usefull Commands
-**1. Super cmd logs its need**
+**1. Super cmd logs**
 
-- Starting your node: `systemctl start otnode`
-- Stopping the node: `systemctl stop otnode`
-- Restarting the node: `systemctl restart otnode`
-- Showing node logs: `journalctl -u otnode --output cat -fn 100`
-- Opening the node config: `nano /root/ot-node/.origintrail_noderc`
+- Start node: `systemctl start otnode`
+- Stop node: `systemctl stop otnode`
+- Restart node: `systemctl restart otnode`
+- Show node logs: `journalctl -u otnode --output cat -fn 100`
+- Open node config: `nano /root/ot-node/.origintrail_noderc`
 - Save and backup: `cat /root/ot-node/.origintrail_noderc`
 
-**2. To check leaderboard the Incentivised testnet website**
+**2. Check the leaderboard incentivised testnet v8**
 
 - The leaderboards are periodically updated based on community contributions, used to determine the amount of TRAC incentives.
 - Checking show up **[DASHBOARD LEADERBOARDS](https://dkg-v8-incentivised-testnet.origintrail.io/)**
 
-**3. Important Note** 
+**3. Important note** 
 
 During the V8 DKG Core node installation process, installer will deploy otnode-logger.service which will automatically stream the V8 DKG Core node logs to OriginTrail team for support/debug purposes **This service is a hard requirement for the incentivised testnet rewards.**
 
