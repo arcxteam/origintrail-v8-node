@@ -1,4 +1,4 @@
-![V8_DKG_Testnet](https://github.com/user-attachments/assets/e6bd420a-d2d7-4772-94ab-a029e76ab2d6)
+![origintrail-testnet-node-v8](https://github.com/user-attachments/assets/17fa3e53-8a92-4f44-8a9d-e2cae7037922)
 
 # Run OriginTrail V8 Incentivized Testnet Node - Full Guide
 OriginTrail - Decentralized Knowledge Graph (DKG), Run an Node V8 Incentivized Testnet - Buidl to Measure, Manage, and Master
@@ -24,9 +24,9 @@ OriginTrail - Decentralized Knowledge Graph (DKG), Run an Node V8 Incentivized T
 `In order to deploy your V8 DKG node, you will need a Linux server with the minimum recommended hardware`
 | Requirement                      | Details                                          |
 |-----------------------------------|--------------------------------------------------|
-| RAM/Memory                         | 4 GB                                               |
-| CPU/vCPU                              | 2 Cores                                           |
-| Storage Space                         | 50 GB                                             |
+| RAM/Memory                         | 4-6 GB                                               |
+| CPU/vCPU                              | 2-4 Cores                                           |
+| Storage Space                         | 50-100 GB                                             |
 | Supported OS                      | Ubuntu 20.04-22.04-24.04 LTS               |
 | Node Installation Script   | Monitor, Language Based-on Java                         |
 
@@ -101,7 +101,8 @@ cd /root/ && curl -k -o v8_installer.sh https://raw.githubusercontent.com/Origin
 **2. Check the leaderboard incentivised testnet v8**
 
 - The leaderboards are periodically updated based on community contributions, used to determine the amount of TRAC incentives.
-- Checking show up **[DASHBOARD LEADERBOARDS](https://dkg-v8-incentivised-testnet.origintrail.io/)**
+- ✅ Profile shares token name : **this named by typing your like**
+- Checking search onto your token name **[DASHBOARD LEADERBOARDS](https://dkg-v8-incentivised-testnet.origintrail.io/)**
 
 **3. Important note** 
 
